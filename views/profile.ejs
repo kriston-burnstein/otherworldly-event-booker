@@ -1,0 +1,98 @@
+<%- include('partials/header-logged-in') -%>
+
+<div class="container card-container">
+  <div class="row justify-content-center">
+      <div class="col-6">
+          <!-- <div>
+              <p><strong>User Name</strong>: <%= user.userName %></p>
+              <p><strong>Email</strong>: <%= user.email %></p>
+              <a href="/logout" class="col-3 btn btn-primary">Logout</a> -->
+          <!-- </div> --> 
+          <div class="mt-5">
+            <h2>Add a Character</h2>
+            <form action="/post/createPost" enctype="multipart/form-data" method="POST">
+              <div class="mb-3">
+                  <label for="title" class="form-label">Character Name</label>
+                  <input type="text" class="form-control" id="title" name="title">
+              </div>
+              <div class="mb-3">
+              <label for="colorScheme" class="form-label">Character Color Scheme</label>
+              <select class="form-select" aria-label="Default select example" id="colorScheme" name="colorScheme">
+                <option selected>Please Select</option>
+                <option value="Black">Black</option>
+                <option value="Black and White">Black and White</option>
+                <option value="Blue">Blue</option>
+                <option value="Bronze/Gold">Bronze/Gold</option>
+                <option value="Green">Green</option>
+                <option value="Orange">Orange</option>
+                <option value="Pink">Pink</option>
+                <option value="Purple">Purple</option>
+                <option value="Red/Maroon">Red/Maroon</option>
+                <option value="White/Silver">White/Silver</option>
+                <option value="Yellow">Yellow</option>
+              </select>
+              </div>
+              <div class="mb-3">
+                <label for="basic-url" class="form-label">Character Type</label>
+                <select class="form-select" aria-label="Default select example" id="characterType" name="characterType">
+                  <option selected>Please Select</option>
+                  <option value="Living Art">Living Art</option>
+                  <option value="Living Statue">Living Statue</option>
+                  <option value="Greeter">Greeter</option>
+                  <option value="Interactive">Interactive</option>
+                  <option value="Stage Show">Stage Show</option>
+                  <option value="Strolling Table">Strolling Table</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="caption" class="form-label">Caption</label>
+                <textarea class="form-control" id="caption" name="caption" placeholder="Please provide a short caption or headline."></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="chDescription" class="form-label">Description</label>
+                <textarea class="form-control" id="chDescription" name="chDescription" placeholder="Please provide a more in-depth description of this character." rows="5"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="addColors" class="form-label">Additional Colors Available</label>
+                <textarea class="form-control" id="addColors" name="addColors" placeholder="Please list all colors available for this character." rows="5"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="basic-url" class="form-label">Price Range</label>
+                <select class="form-select" aria-label="Default select example" id="priceRange" name="priceRange">
+                  <option selected>Please Select</option>
+                  <option value="$100 to $300">$100 to $300</option>
+                  <option value="$300 to $500">$300 to $500</option>
+                  <option value="$500 to $700">$500 to $700</option>
+                  <option value="$700 to $900">$700 to $900</option>
+                  <option value="$900 to $1,100">$900 to $1,100</option>
+                  <option value="$1,100 to $2,000">$1,100 to $2,000</option>
+                  <option value="$2,000 and up">$2,000 and up</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="imgUpload" class="form-label">Image</label>
+                <input type="file" class="form-control" id="imageUpload" name="file">
+              </div>
+              <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
+            </form>
+          </div>
+      </div>
+      <!-- <div class="col-6">
+        <ul class="row list-unstyled">
+        <% for(var i=0; i<posts.length; i++) {%>
+          <li class="col-6 justify-content-between mt-5">
+            <a href="/post/<%= posts[i]._id%>">
+              <img class="img-fluid" src="<%= posts[i].image%>">
+            </a>
+          </li>
+        <% } %>
+        </ul>
+        <div class="row justify-content-center mt-5">
+          <a class="btn btn-primary" href="/feed">Return to Feed</a>
+        </div>  
+      </div>   -->
+    </div>
+  </div>
+  
+<%- include('partials/footer') -%>

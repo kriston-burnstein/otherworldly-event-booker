@@ -1,0 +1,118 @@
+html,
+body {
+    height: 100%;
+    font-size: 1rem;
+    /* background-color: rgb(81,11,98); */
+    /* background: url("/imgs/1.jpg"); */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg-badge {
+    background: rgb(134,52,173);
+    background: linear-gradient(90deg, rgba(134,52,173,1) 0%, rgba(217,12,123,1) 56%, rgba(67,0,255,1) 100%);
+}
+
+.bg-badge-secondary {
+    background-color: rgb(134,52,173);
+}
+
+.bg-badge-tertiary {
+    background-color: rgb(76, 160, 76);
+}
+
+.outline-btn {
+    color: rgb(134,52,173);
+    border: 1px solid rgb(134,52,173);
+}
+.outline-btn:hover {
+    color: white;
+    background-color: rgb(134,52,173);
+    border: 1px solid rgb(134,52,173);   
+}
+
+.btn-sign-up{
+    background-color: rgb(134,52,173);
+    color: #ffff;
+}
+
+.btn-sign-up:hover {
+    background-color: rgb(149, 56, 192);
+    color: white;
+}
+
+.accent-1 {
+    color: rgb(134,52,173);
+}
+
+.card-container{
+  margin-top: 10rem;  
+}
+
+.page-header {
+    margin-top: 4rem;
+    font-size: 1.25rem;
+}
+
+/* .page-section {
+    background-color: ;
+    height: ;
+} */
+
+.btn-nav{
+    margin-right: .5rem;
+}
+
+.home{
+    border: 2px solid black;
+    min-height: 80vh;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 80%;
+}
+
+.btn-liked{
+    color: #f03566;
+}
+
+.btn-liked:hover{
+    color: #f03566;
+}
+
+.btn-bookmarked{
+    background: #ffff;
+}
+
+hr {
+    color: rgb(134,52,173);
+}
+
+.btn-primary {
+    background-color: rgb(134,52,173);
+    border: 1px solid rgb(134,52,173);
+
+}
+
+.btn-primary:hover {
+    background-color: rgb(149, 56, 192);
+    border: 1px solid rgb(134,52,173);
+}
+
+/* .btn-primary:focus,.btn-primary:active {
+    outline-color: rgb(149, 56, 192) !important;
+    box-shadow: 3px rgb(149, 56, 192) !important;
+ } */
+
+/* blue border on btn-primary click I think has something to do with transition properties, inspect the button in the browser to see if I can edit this */ 
+
+/* .card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+} */
