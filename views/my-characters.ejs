@@ -9,7 +9,7 @@
         <img src="<%= posts[i].image%>" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title"><%= posts[i].title%></h5>
-          <p class="card-text"><%= posts[i].caption %>.</p>
+          <p class="card-text"><%= posts[i].caption %></p>
           <a href="/post/<%= posts[i]._id%>" class="btn btn-primary">View Character</a>
           <!-- <a href="/post/<%= posts[i]._id%>" class="btn btn-primary">Edit</a> -->
           <%if(posts.user == user.id){ %>
